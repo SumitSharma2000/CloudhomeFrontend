@@ -17,7 +17,8 @@
     align-items: center;
     color: #000;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.6em;
+    gap: 5px;
 }
 
 .navbar-logo .react-icons {
@@ -32,10 +33,11 @@
 .navbar-link {
     color: #000;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 2em;
     transition: color 0.3s;
 }
 
 .navbar-link:hover {
     color: #007bff;
+    text-decoration: underline;
 }
