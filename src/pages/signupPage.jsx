@@ -123,10 +123,10 @@ const SignupPage = () => {
           Join Us!
         </h1>
         <h2 style={{ color: "#000", marginBottom: "30px", fontSize: "24px" }}>
-          Create a CloudHome account
+          Create a CloudSafe account
         </h2>
         <p style={{ color: "#000", marginBottom: "30px", fontSize: "16px" }}>
-          Be part of a CloudHome community.
+          Be part of a CloudSafe community.
         </p>
         <div style={{ width: "100%" }}>
           <label style={labelStyles}>First Name</label>
@@ -167,7 +167,7 @@ const SignupPage = () => {
             style={{ marginRight: "5px" }}
           />
           <label htmlFor="terms" style={{ color: "#000", fontSize: "14px" }}>
-            I agree to CloudHome's Terms of Service and Privacy Policy.
+            I agree to CloudSafe's Terms of Service and Privacy Policy.
           </label>
         </div>
         <button type="button" onClick={handleSubmit} style={buttonStyles}>

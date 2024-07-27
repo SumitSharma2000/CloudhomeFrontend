@@ -47,22 +47,22 @@ const AboutPage = () => {
     <>
       <Navbar />
       <div style={styles.page}>
-        <h1 style={styles.heading}>CloudHome</h1>
+        <h1 style={styles.heading}>CloudSafe</h1>
         <p style={styles.paragraph}>
-          Cloud Home is a unique, safe, and scalable private drive designed to provide a secure haven for your data and documents. With a focus on privacy and ease of access, Cloud Home ensures that your valuable information is always at your fingertips, whether you're at home, in the office, or on the go.
+          CloudSafe is a unique, safe, and scalable private drive designed to provide a secure haven for your data and documents. With a focus on privacy and ease of access, CloudSafe ensures that your valuable information is always at your fingertips, whether you're at home, in the office, or on the go.
         </p>
         <p style={styles.paragraph}>
-          Our platform offers a robust and user-friendly interface, allowing you to manage your files with ease. Whether it's personal documents, work files, or cherished photos, Cloud Home provides a seamless experience to store, organize, and share your data securely. We prioritize your privacy, using advanced encryption and secure access protocols to protect your information from unauthorized access.
+          Our platform offers a robust and user-friendly interface, allowing you to manage your files with ease. Whether it's personal documents, work files, or cherished photos, CloudSafe provides a seamless experience to store, organize, and share your data securely. We prioritize your privacy, using advanced encryption and secure access protocols to protect your information from unauthorized access.
         </p>
         <p style={styles.paragraph}>
-          At Cloud Home, we believe that your data should be as safe as it is accessible.
+          At CloudSafe, we believe that your data should be as safe as it is accessible.
         </p>
         <p style={{ ...styles.paragraph, color: "black", marginTop: "20px" }}>
-  Our commitment to security and scalability means that you can trust Cloud Home to grow with your needs, providing ample space and features as your data storage requirements evolve. Join us at Cloud Home and experience the peace of mind that comes with knowing your data is protected and accessible whenever you need it.
+  Our commitment to security and scalability means that you can trust CloudSafe to grow with your needs, providing ample space and features as your data storage requirements evolve. Join us at CloudSafe and experience the peace of mind that comes with knowing your data is protected and accessible whenever you need it.
 </p>
         <div style={styles.signatureContainer}>
           <p style={styles.signature}>Sumit Sharma...</p>
-          <p style={styles.signature}>Cloud Home</p>
+          <p style={styles.signature}>CloudSafe</p>
         </div>
       </div>
     </>

@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className="navbar-container">
             <div className="navbar-left-item">
-                <h3>CloudHome</h3>
+                <h3>CloudSafe</h3>
             </div>
             <div className="navbar-right-items">
                 <Link to="/" className="navbar-link">Home</Link>

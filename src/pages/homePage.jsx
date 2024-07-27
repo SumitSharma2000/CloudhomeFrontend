@@ -144,7 +144,7 @@ const HomePage = () => {
               &larr; Back
             </a>
           )}
-          <h1 style={styles.heading}>Welcome to Our CloudyHome</h1>
+          <h1 style={styles.heading}>Welcome to Our CloudSafe</h1>
           <p style={styles.subheading}>
            This is a simple cloud storage application that allows you to store your files and folders in the cloud.
 
