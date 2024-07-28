@@ -26,6 +26,10 @@ const HomePage = () => {
   const { deleteFile } = useDeleteFile();
   const parentFolder = folderStructure[folderStructure.length - 1];
 
+  useEffect(() => {
+    getFileFolders(parentFolder._id);
+  }, [parentFolder]);
+
   const handleDoubleClick = (elem) => {
     if (elem.type === "folder") {
       setFolderStructure([...folderStructure, elem]);
@@ -54,7 +58,6 @@ const HomePage = () => {
     if (folder) {
       const newFolderStructure = folderStructure.slice(0, -1);
       setFolderStructure(newFolderStructure);
-      getFileFolders(folder._id);
     }
   };
 
@@ -76,8 +79,6 @@ const HomePage = () => {
   const [newName, setNewName] = useState("");
 
   const handleRenameClick = (id, currentName) => {
-    console.group("Id is on home page--------",id)
-    console.group("CurrName is on home page--------",currentName)
     setRenameId(id);
     setNewName(currentName);
   };
@@ -86,14 +87,14 @@ const HomePage = () => {
 
   const handleRenameSubmit = async (id) => {
     if (newName.trim()) {
-      if (
-        filefolders.find((item) => item._id === id && item.type === "folder")
-      ) {
+      const item = filefolders.find((item) => item._id === id);
+      if (item.type === "folder") {
         await renameFolder(id, newName);
+      } else {
+        await renameFile(id, newName);
       }
-      await renameFile(id, newName);
+      getFileFolders(parentFolder._id); 
     }
-    getFileFolders(parentFolder._id); 
     setRenameId(null);
     setNewName("");
   };
@@ -124,10 +125,6 @@ const HomePage = () => {
     }
   };
   
-  useEffect(() => {
-    getFileFolders(parentFolder._id);
-  }, [folderStructure]);
-
   return (
     <>
       <Navbar />
