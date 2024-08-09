@@ -19,7 +19,7 @@ const HomePage = () => {
   const [folderStructure, setFolderStructure] = useState([
     { _id: null, name: "Cloud Home" },
   ]);
-  const { getFileFolders, filefolders } = useGetFileFolders();
+  const { getFileFolders, filefolders} = useGetFileFolders();
   const { deleteFolder } = useDeleteFolder();
   const { renameFolder } = useRenameFolder();
   const { renameFile } = useRenameFile();
@@ -213,7 +213,7 @@ const HomePage = () => {
           </ul>
 
           <div style={styles.folderContainer}>
-            {filefolders.map((elem) =>
+            {Array.isArray(filefolders) &&filefolders.map((elem) =>
               elem.type === "folder" ? (
                 <Folder
                   elem={elem}
